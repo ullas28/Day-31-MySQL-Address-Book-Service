@@ -27,3 +27,7 @@ create table AddressBook (
     select count(firstName) from AddressBook where city = 'sagar'; 
     select count(firstName) from AddressBook where city = 'Gurgaon'; 
     select count(firstName) from AddressBook where state = 'Karnataka'; 
+    insert into AddressBook (firstName, lastName, address, city, state, zip, phoneNumber, email)
+    values ('Madhu','Sudhan S','Majestic','Chikkamangalur','Karnataka',514131,1777777777,'mss00000000@gmail.com' );
+    select firstName,city from AddressBook order by city;
+    select firstName,city from AddressBook order by firstName;

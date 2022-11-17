@@ -23,3 +23,7 @@ create table AddressBook (
     select * from AddressBook where city = 'Banaglore' or state = 'Karnataka'; 
 	select * from AddressBook where city = 'Sagar';
     select * from AddressBook where state = 'Haryana';   
+    select count(firstName) from AddressBook where city = 'Bangalore'; 
+    select count(firstName) from AddressBook where city = 'sagar'; 
+    select count(firstName) from AddressBook where city = 'Gurgaon'; 
+    select count(firstName) from AddressBook where state = 'Karnataka'; 

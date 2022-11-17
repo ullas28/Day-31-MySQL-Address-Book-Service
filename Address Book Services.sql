@@ -17,3 +17,4 @@ create table AddressBook (
     select * from AddressBook;
     update AddressBook set phoneNumber = 4512324565 WHERE firstName = 'Sayyed';
     update AddressBook set zip = 251235 WHERE firstName = 'Sayyed';
+    delete from AddressBook where lastName = 'Sudhan S';

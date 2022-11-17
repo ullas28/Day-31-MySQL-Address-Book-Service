@@ -18,3 +18,8 @@ create table AddressBook (
     update AddressBook set phoneNumber = 4512324565 WHERE firstName = 'Sayyed';
     update AddressBook set zip = 251235 WHERE firstName = 'Sayyed';
     delete from AddressBook where lastName = 'Sudhan S';
+	insert into AddressBook (firstName, lastName, address, city, state, zip, phoneNumber, email)
+    values ('Shivam','Kumar','Whitefield','Mysore','Karnataka',584131,3454874865,'sk00000000@gmail.com' );
+    select * from AddressBook where city = 'Banaglore' or state = 'Karnataka'; 
+	select * from AddressBook where city = 'Sagar';
+    select * from AddressBook where state = 'Haryana';   

@@ -37,3 +37,6 @@ create table AddressBook (
 	update AddressBook set bookName = 'Two', contactType = 'Friends' where lastName = 'Priyadarshi';
 	update AddressBook set bookName = 'Two', contactType = 'Friends' where lastName = 'Mutallib';
 	update AddressBook set bookName = 'Three', contactType = 'Profession' where lastName = 'Sudhan S';
+	select count(firstName) from AddressBook where contactType = 'Family'; 
+	select count(firstName) from AddressBook where contactType = 'Friends'; 
+	select count(firstName) from AddressBook where contactType = 'Profession'; 

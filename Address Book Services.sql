@@ -40,3 +40,7 @@ create table AddressBook (
 	select count(firstName) from AddressBook where contactType = 'Family'; 
 	select count(firstName) from AddressBook where contactType = 'Friends'; 
 	select count(firstName) from AddressBook where contactType = 'Profession'; 
+    Delete from  AddressBook where lastName = 'Kumar k' ;
+   insert into addressbookservice.addressbook (firstName, lastName, address, city, state, zip, phoneNumber, email, bookName, contactType)
+    values ('Ullas','Kumar k','Hebbal','Bangalore','Karnataka',564131,5454874865,'uk00000000@gmail.com','One','Family'),
+    ('Ullas','Kumar k','Hebbal','Bangalore','Karnataka',564131,5454874865,'uk00000000@gmail.com','Two','Friends');
